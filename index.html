@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container {
+            width: 700px;
+            height: 500px;
+            text-align: center;
+            background-color: darkgray;
+            margin-left: 300px;
+            padding-top: 20px;
+            border-radius: 52px;
+        }
+
+        .container-box {
+            position: relative;
+            top: 122px;
+            font-family: sans-serif;
+        }
+
+        h1 {
+            color: deeppink;
+            font-style: italic;
+        }
+
+        input {
+            height: 30px;
+            width: 215px;
+            border-radius: 10px;
+            border: none;
+            padding: 3px;
+            margin: 2px;
+        }
+
+        #btn {
+            width: 70px;
+            height: 31px;
+            border-radius: 12px;
+            border: none;
+            background-color: deeppink;
+            color: white;
+            font-weight: bold;
+        }
+
+        .container-guess {
+            width: 200px;
+            height: 66px;
+            margin-left: 225px;
+            margin-top: 14px;
+            color: black;
+            font-weight: 600;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="container-box">
+            <h1>Guess the Number from 1 to 5</h1>
+            <input type="text" placeholder="Enter any Number" id="inuptnum">
+
+            <button id="btn" onclick="checknum()">Check</button>
+            <br>
+            <br>
+            <div class="container-guess">
+                <div id="textans">You are Right/Wrong</div>
+
+                <p id="guessno">Avaliable Guesses : 3</p>
+                <br>
+            </div>
+
+        </div>
+
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
